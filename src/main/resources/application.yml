@@ -1,0 +1,16 @@
+spring:
+  sql:
+    init:
+      mode: never
+  datasource:
+    url: jdbc:postgresql://db:5432/sk_example_db
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    show-sql: true
